@@ -3,9 +3,9 @@
 
   get_header();
 ?>
-<div class="party-banner banner-all">
+<div class="party-banner banner-all brown">
   <h1>Kraushaar & Schmidt</h1>
-  <p>Become the Schmashaars</p>
+  <p>Become the Schmashaars (Just Kidding, we are keeping our last names)</p>
   <h1 class="down">   &#xfe40; </h1>
 </div>
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
