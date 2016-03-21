@@ -144,7 +144,7 @@
         <h2><?php echo the_field('home_section_title'); ?></h2>
         <p><?php the_field('home_section_blurb'); ?></p>
         <div class="button-parent-center">
-          <a href="<?php echo get_permalink(); ?>" class="button">RSVP Here</a>
+          <p><a href="<?php echo get_permalink(); ?>" class="button">RSVP Here</a></p>
         </div>
       </div>
     <?php endwhile; ?> <!--End of accomidations loop-->
