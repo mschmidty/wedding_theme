@@ -28,9 +28,15 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wedding2' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
+  <div class="menu-icon open-panel"><a href="#"> &#9776; </a></div>
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+      <div class="menu-nav-header">
+        <a href="#" class="close-panel" role="close"> &#x2715; </a>
+        <p class="close-panel">Where To...</p>
+      </div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
