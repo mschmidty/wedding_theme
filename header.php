@@ -31,7 +31,7 @@
   <div class="menu-icon open-panel"><a href="#">&#9776;</a></div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
       <a href="#" class="close-panel"> &#10005; </a>
-      <p>where to...</p>
+      <p class="close-panel">where to...</p>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
