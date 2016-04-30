@@ -116,15 +116,7 @@ add_action( 'widgets_init', 'wedding2_widgets_init' );
 function wedding2_scripts() {
 	wp_enqueue_style( 'wedding2-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/site.js', array('jquery'), null, true);
-
-
-	if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-	function my_jquery_enqueue() {
-	   wp_deregister_script('jquery');
-	   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
-	   wp_enqueue_script('jquery');
-	}
+	wp_enqueue_script( 'wedding2-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'wedding2-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 

@@ -79,8 +79,8 @@
         $small = $image['sizes'][$sizeSmall];
         $xsmall = $image['sizes'][$sizeXsmall];
 
-        ?>
-        <?php if( !empty($image) ): ?>
+       ?>
+       <?php if( !empty($image) ): ?>
 
         <img sizes="50vw" 
         srcset="
@@ -90,14 +90,10 @@
             <?php echo $xsmall; ?> 300w"
 
         alt="<?php echo $image['alt']; ?>">
-        <?php endif ?>
-
+      <?php endif ?>
         <svg viewBox="0 0 145.239 363.097" xmlns="http://www.w3.org/2000/svg" version="1.1">
           <use xlink:href="#clip_triangle"></use>
         </svg>
-      
-        
-        
       </div>
       <div class="text-snippet">
         <h2><?php echo the_field('home_section_title'); ?></h2>
@@ -148,7 +144,7 @@
         <h2><?php echo the_field('home_section_title'); ?></h2>
         <p><?php the_field('home_section_blurb'); ?></p>
         <div class="button-parent-center">
-          <p><a href="<?php echo get_permalink(); ?>" class="button">RSVP Here</a></p>
+          <a href="<?php echo get_permalink(); ?>" class="button">RSVP Here</a>
         </div>
       </div>
     <?php endwhile; ?> <!--End of accomidations loop-->
