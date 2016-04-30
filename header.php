@@ -28,8 +28,10 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'wedding2' ); ?></a>
 
 	<header id="masthead" class="site-header" role="banner">
-  <a href="#" class="open-panel">&#9776;</a>
+  <div class="menu-icon open-panel"><a href="#">&#9776;</a></div>
 		<nav id="site-navigation" class="main-navigation" role="navigation">
+      <a href="#" class="close-panel"> &#10005; </a>
+      <p>where to...</p>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
