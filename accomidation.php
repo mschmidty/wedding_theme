@@ -33,7 +33,7 @@
     <?php if( $the_query->have_posts() ): ?>
       <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-        <div class="section-accomidation orange">
+        <div class="section-accomidation">
           <a href="<?php echo get_permalink(); ?>">
             <div class="card-image">
               <div class="card-image-title">
