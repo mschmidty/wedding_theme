@@ -32,7 +32,7 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation">
       <a href="#" class="close-panel"> &#10005; </a>
       <p class="close-panel">where to...</p>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'Menu 1' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
