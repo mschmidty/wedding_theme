@@ -22,36 +22,9 @@
   <!--Home Page Loop-->
     <div class="home-section max-width-1400">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <div class="clip-image">
-        <?php 
-
-        $image = get_field('image');
-        $sizeMedium = 'medium-thumb-img';
-        $sizeSmall = 'large-thumb-img';
-        $sizeXsmall = 'xsmall-img';
-        $medium = $image['sizes'][$sizeMedium];
-        $small = $image['sizes'][$sizeSmall];
-        $xsmall = $image['sizes'][$sizeXsmall];
-
-       ?>
-       <?php if( !empty($image) ): ?>
-
-        <img sizes="50vw" 
-        srcset="
-            
-            <?php echo $medium; ?> 700w,
-            <?php echo $small; ?> 500w,
-            <?php echo $xsmall; ?> 300w"
-
-        alt="<?php echo $image['alt']; ?>">
-      <?php endif ?>
-        <svg viewBox="0 0 145.239 363.097" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <use xlink:href="#clip_triangle"></use>
-        </svg>
-      </div>
-      <div class="text-snippet">
+      <div class="text-snippet welcome-text-snippet">
           <h2><?php the_field('title'); ?></h2>
-          <p><?php the_field('welcome_blurb'); ?></p>
+          <p><?php the_content(); ?></p>
       </div>
       <?php endwhile; else : ?>
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

@@ -3,7 +3,7 @@
 
   get_header();
 ?>
-<div class="home-outer">
+<div class="schmaushaar-outer">
   
   <div class="banner-all brown">
     <div class="">
