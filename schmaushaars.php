@@ -7,8 +7,8 @@
   
   <div class="banner-all brown">
     <div class="">
-      <h1>Schmidt & Kruashaar</h1>
-      <p class="center">Become the Schmaushaars (just kidding we are keeping our last names).</p>
+      <h1>Schmidt & Kraushaar</h1>
+      <p class="center">Become the Schmaushaars (just kidding we are both keeping our last names).</p>
     </div>
     <h1 class="down">   &#xfe40; </h1>
   </div>

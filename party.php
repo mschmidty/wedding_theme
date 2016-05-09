@@ -71,7 +71,7 @@
     
   </div>
   <h2>bridesmaids</h2>
-  <div class="brown">
+  <div>
     <div class="bridesmaids party-inner">
       <?php 
 

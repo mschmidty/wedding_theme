@@ -9,8 +9,11 @@
       <use xlink:href="#rooster"></use>
     </svg> 
   </div>
-  <h1>Répondez s'il vous plaît</h1>
-  <h4>(R.S.V.P)</h4>
+  <h1 class="rsvp-header-large">Répondez s'il vous plaît</h1>
+  <h4 class="rsvp-header-large">(R.S.V.P)</h4>
+  <h1 class="rsvp-header-small">RSVP</h1>
+  <h4 class="rsvp-header-small">Thanks for Repondez s'il vous plaiting!</h4>
+
   <h1 class="down">   &#xfe40; </h1> 
 </div>
 

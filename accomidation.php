@@ -7,7 +7,7 @@
   <svg viewBox="0 0 295.556 253.197" xmlns="http://www.w3.org/2000/svg" version="1.1">
     <use xlink:href="#dog1"></use>
   </svg> 
-  <h2>Accommodations</h2>
+  <h2>Where to stay and what to do</h2>
   <h4>Welcome to Dolores</h4>
   <h1 class="down">   &#xfe40; </h1>
 </div>
