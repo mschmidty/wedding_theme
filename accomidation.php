@@ -54,7 +54,7 @@
           <p>
             <?php the_field('landing_page_blurb'); ?>
           </p>
-          <a href="<?php echo get_permalink(); ?>">Find Details Here</a>
+          <a target="_blank" href="<?php echo the_field('hotel_website'); ?>">More Details</a>
         </div>
       <?php endwhile; ?>
     <?php endif; ?>

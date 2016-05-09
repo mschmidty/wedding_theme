@@ -15,8 +15,6 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
     <nav class="footer-nav" role="navigation">
-      <a href="#" class="close-panel"> &#10005; </a>
-      <p class="close-panel">where to...</p>
       <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'Menu 1' ) ); ?>
     </nav><!-- #site-navigation -->
     <div class= "footer-design">
@@ -30,23 +28,23 @@
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'wedding2' ), 'wedding2', '<a href="http://schmidtyworks.com" rel="designer">Michael Schmidt</a>' ); ?>
 		</div><!-- .site-info -->
     <div class="ball">
-    <ul>
-      <li>
-        <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <use xlink:href="#ball"></use>
-        </svg>
-      </li>
-       <li>
-        <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <use xlink:href="#ball"></use>
-        </svg>
-      </li>
-      <li>
-        <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
-          <use xlink:href="#ball"></use>
-        </svg>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <use xlink:href="#ball"></use>
+          </svg>
+        </li>
+         <li>
+          <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <use xlink:href="#ball"></use>
+          </svg>
+        </li>
+        <li>
+          <svg viewBox="0 0 400 817" xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <use xlink:href="#ball"></use>
+          </svg>
+        </li>
+      </ul>
       
     </div>
 	</footer><!-- #colophon -->
