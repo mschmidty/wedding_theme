@@ -1,0 +1,160 @@
+.home-outer {
+  width:100%;
+  .sun, .moon {
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    display:block;
+    position:absolute;
+    z-index:100;
+  }
+  .sun {
+    background:$brown;
+    right:150px;
+    top:85px;
+  }
+  .moon {
+    background:$orange;
+    right:178px;
+    top:66px;
+  }
+}
+.welcome-text-snippet {
+  h2 {
+    text-align:center;
+  }
+}
+@media all and(max-width:700px) {
+  .home-outer {
+    .sun, .moon {
+      height:60px;
+      width:60px;
+      border-radius:50%;
+      display:block;
+      position:absolute;
+      z-index:100;
+    }
+    .sun {
+      background:$brown;
+      right:60px;
+      top:65px;
+    }
+    .moon {
+      background:$orange;
+      right:79px;
+      top:56px;
+    }
+  }
+}
+.home-banner {
+  height:90vh;
+  width:100%;
+  background:$orange;
+  color:$brown;
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  h1, h3 {
+    display:block;
+    width:100%;
+    text-align:center;
+    margin:0.1em;
+  }
+  svg {
+    position:absolute;
+    bottom:0;
+    width:105%;
+    fill:$brown;
+    stroke:$brown;
+    display:block;
+    margin:0;
+    padding:0;
+    filter: drop-shadow( 1px 1px 2px  rgba(0,0,0,0.9) ); 
+    overflow:auto;
+  }
+  .down {
+    position:absolute;
+    width:100%;
+    bottom:1.75em;
+    animation: pulse 3.5s infinite;
+    @media screen and (min-width:2050px){
+      bottom:2.5em;
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform:translate(0,0);
+    }
+    50% {
+      transform:translate(0,35px);
+    } 
+  }
+}
+.home-section {
+  width:100%;
+  display:block;
+  margin:0;
+  padding:0;
+  display:flex;
+  position:relative;
+  padding:3.5em 0;
+  border-bottom:2px solid $orange;
+  background:$brown;
+  color:$l-orange;
+  &:last-of-type {
+    border:none;
+  }
+  p {
+    color:$l-orange;
+  }
+  
+  .clip-image {
+    position:relative;
+    width:50%;
+    height:auto;
+    svg {
+      fill:$brown;
+      stroke:$brown;
+      position:absolute;
+      display:block;
+      bottom:-1px;
+      right:-1px;
+      height:110%;
+      width:auto;
+    }
+  }
+  .text-snippet {
+    max-width:700px;
+    padding:0 1em;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  }
+  h2 {
+    margin: 0;
+    display:block;
+  }
+  p {
+    display:block;
+    margin:1em 0;
+  }
+}
+
+@media all and(max-width:700px){ 
+  .home-section {
+    display:block;
+    .clip-image {
+      width:100%;
+      margin:0 auto;
+      padding: 1em;
+      margin-bottom:1em;
+      display:none;
+        svg {display:none; }
+      
+    }
+  }
+}

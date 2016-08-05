@@ -1,0 +1,62 @@
+.main-navigation {
+  position:absolute;
+  z-index:50;
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  width:100%;
+  background:$brown;
+  top:0;
+  right:0;
+  ul  {
+    display:block;
+    padding:.5em .5em;
+  }
+  li {
+    display:inline-block;
+    padding:.5em;
+    position:relative;
+    transition:all 0.5s ease;
+    a {
+      text-decoration:none;
+      font-size:1.3em;
+      font-weight:500;
+      display:block;
+      transition:all 0.5s ease;
+      color:$orange;
+    }
+    &:hover {
+      background:$orange;
+      border-radius:3px;
+      box-shadow:1px 1px 1px rgba(0,0,0,0.7);
+      a {
+        color:$brown;
+      }
+    }
+  }
+}
+.home, .page-template-rsvp, .page-template-registry {
+  .main-navigation {
+  color:$brown;
+  background:$orange;
+  a {
+    color:$brown;
+  }
+  li:hover {
+      background:$brown;
+      a {
+        color:$orange;
+      }
+    }
+  }
+}
+.menu-icon {
+  display:none;
+}
+.close-panel {
+  display:none;
+}
+.home header {
+  background:$orange;
+}
+@import "_header_nav_menu"

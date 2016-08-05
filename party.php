@@ -1,4 +1,4 @@
-<?php 
+<?php
   /* Template Name: Wedding Party */
 
   get_header();
@@ -18,23 +18,70 @@
   </svg>
   <h1>The Wedding Party</h1>
   <h1 class="down">   &#xfe40; </h1>
-  
+
   <svg viewBox="0 0 400.244 496.399" xmlns="http://www.w3.org/2000/svg" version="1.1">
     <use xlink:href="#wedding_couple"></use>
   </svg>
 </div>
 
 <div class="party-outer">
-  <h2>Groomsmen</h2>
-  <div class="groomsmen party-inner">
-    <?php 
+  <h2>
+    Master of the Ceremony
+  </h2>
+  <div class="party-inner groomsmen">
+    <?php
 
       // args
       $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
       $args = array(
         'post_type'   => 'wedding party',
         'posts_per_page' => 10,
-        'paged' => $paged, 
+        'paged' => $paged,
+        'cat' => '5'
+      );
+
+
+      // query
+
+      $the_query = new WP_Query( $args );
+
+      ?>
+      <?php if( $the_query->have_posts() ): ?>
+        <?php while( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+          <div class="party-part">
+            <div class="circle">
+              <?php
+                $image = get_field('picture');
+                $size = ('thumb-center-medium');
+                $picture = $image['sizes'][$size];
+               ?>
+               <?php if (!empty($image) ): ?>
+                <img src="<?php echo $picture; ?>" alt="<?php echo $picture['alt']; ?>" />
+              <?php endif ?>
+
+            </div>
+            <h4><?php the_field('name'); ?></h4>
+            <h5><?php  the_field('live'); ?></h5>
+            <p><?php the_field('short_bio'); ?></p>
+          </div>
+
+        <?php endwhile; ?>
+      <?php endif; ?>
+
+  </div>
+  <?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
+
+  <h2>Groomsmen</h2>
+  <div class="groomsmen party-inner">
+    <?php
+
+      // args
+      $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
+      $args = array(
+        'post_type'   => 'wedding party',
+        'posts_per_page' => 10,
+        'paged' => $paged,
         'cat' => '4'
       );
 
@@ -49,7 +96,7 @@
 
           <div class="party-part">
             <div class="circle">
-              <?php 
+              <?php
                 $image = get_field('picture');
                 $size = ('thumb-center-medium');
                 $picture = $image['sizes'][$size];
@@ -68,19 +115,19 @@
       <?php endif; ?>
 
 <?php wp_reset_query();  // Restore global post data stomped by the_post(). ?>
-    
+
   </div>
   <h2>bridesmaids</h2>
   <div>
     <div class="bridesmaids party-inner">
-      <?php 
+      <?php
 
         // args
         $paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
         $args = array(
           'post_type'   => 'wedding party',
           'posts_per_page' => 10,
-          'paged' => $paged, 
+          'paged' => $paged,
           'cat' => '3'
         );
 
@@ -95,7 +142,7 @@
 
             <div class="party-part">
               <div class="circle">
-                <?php 
+                <?php
                   $image = get_field('picture');
                   $size = ('thumb-center-medium');
                   $picture = $image['sizes'][$size];

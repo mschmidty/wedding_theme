@@ -1,0 +1,62 @@
+.registry-banner {
+  background:$orange;
+  color:$brown;
+  position:relative;
+  svg {
+    max-width:20%;
+    width:auto;
+    fill:$brown;
+    margin:0 auto;
+  }
+}
+.registry-options-container {
+  text-decoration:none;
+}
+.registry-options {
+  padding:2em 0;
+  .registry-options-item {
+    padding:2em;
+    border-right:1px solid $black;
+    display:block;
+    margin:0;
+    transition: all 0.5s ease;
+    @media all and(max-width:600px){
+      border-bottom:1px solid $black;
+    }
+    &:last-of-type {
+      border-right:none;
+    }
+    &:hover {
+      background:$brown;
+      p, svg {
+        color:$orange;
+        fill:orange;
+      }
+    }
+    svg {
+      max-width:40%;
+      display:block;
+      margin:0 auto;
+    }
+    a {
+      text-align: center;
+      padding:1em 0.5em;
+      margin:0.5em;
+      text-decoration:none;
+      font-weight:bold;
+      &:hover {
+        background:$orange;
+        border-radius:5px;
+      }
+    }
+    p {
+      margin-bottom:1.5em;
+    }
+  }
+}
+.tree {
+  justify-content:center;
+}
+.thanks {
+  margin:3em auto;
+}

@@ -1,0 +1,130 @@
+*, *:before, *:after {
+  margin:0;
+  padding:0;
+ }
+
+ .scroll {
+  overflow-y:scroll;
+ }
+
+ .underline {
+  text-decoration:underline;
+ }
+
+ .bold {
+  font-weight:bold;
+ }
+
+ .uppercase {
+  text-transform:uppercase;
+ }
+
+ body>svg {
+  display:none;
+ }
+ img {
+  width:100%;
+  height:auto;
+ }
+
+
+@mixin clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020"; 
+        display: block; 
+        height: 0; 
+        overflow: hidden; 
+    }
+    &:after {
+        clear: both;
+    }
+}
+.clearfix {
+  @include clearfix;
+  clear:both;
+}
+
+@mixin rowMachine($numPerRow, $margin) {
+  width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+  &:nth-child(n) {
+    margin-bottom: $margin;
+    margin-right: $margin;
+  }
+  &:nth-of-type(#{$numPerRow}n) {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+}
+
+@mixin text-segment {
+  max-width:700px;
+  @media screen and(max-width:700px) {
+    margin-right:1.2em;
+    margin-left:1.2em;
+  }
+}
+
+.center {
+  margin: 0 auto;
+  text-align:center;
+ }
+ .left {
+  float:left;
+  @include clearfix;
+ }
+ .right {
+  float:right;
+  @include clearfix;
+ }
+
+//New Theme 
+$white: #FCFFF5; 
+$black:#111111;  
+$bage:#D8CAA8;
+$l-green:#5C832F;
+$d-green:#284907;
+$brown:#41342c;
+$l-brown:#7D6455;
+$d-grey:#363942;
+$l-grey:#B1BBBD;
+$ll-grey:#EBEBEB;
+$orange:#f9b549;
+$l-orange:#F9D49A;
+$font-color:#222222;
+$blue:#2591DE;
+$link:$blue;
+
+body {
+  background:$ll-grey;
+}
+
+@mixin brown {
+  background:$brown;
+  color:$orange;
+}
+.brown {
+  background:$brown;
+  color:$orange;
+  p {
+    color:$orange;
+  }
+}
+@mixin orange {
+  background:$orange;
+  color:$brown;
+}
+.orange {
+  background:$orange;
+  color:$brown;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+$footer-background:$brown;
+.site-footer {
+  background:$footer-background;
+  padding:7em 0 1em 0;
+  width:100%;
+  border-top:2px solid $orange;
+}
+.site-info {
+  display:block;
+  margin:0 auto;
+  text-align:center;
+  color:$l-orange;
+}
+.footer-design {
+  svg {
+    fill:$l-brown;
+    width:75%;
+    max-width:1000px;
+    display:block;
+    margin:0 auto;
+    margin-bottom:4em;
+  }
+}
+.ball{
+  margin:0 auto;
+  display:block;
+  text-align:center;
+  svg {
+    fill:$l-brown;
+    width:45px;
+    display:block;
+    margin:2em auto;
+  }
+  ul {
+    display:block;
+    margin:0 auto;
+  }
+  li {
+    display:inline-block;
+    margin:0 2em;
+  }
+}
+.footer-nav {
+  a {
+    color:$l-brown;
+    text-decoration:none;
+    font-size:1.1em;
+    margin-bottom:1em;
+    &:hover {
+      color:$l-orange;
+    }
+  }
+  ul {
+    display:block;
+    text-align:center;
+      }
+  li {
+    display:inline-block;
+    padding:.75em;
+  }
+}

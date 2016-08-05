@@ -1,0 +1,72 @@
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('fonts/quicksand-regular-webfont.woff2') format('woff2'),
+         url('fonts/quicksand-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+$h-font:'quicksandregular', serif;
+$b-font:'quicksandregular', serif;
+
+body {
+  font-family:$h-font;
+  font-weight:400;
+  color:$font-color;
+  background:$ll-grey;
+}
+
+h1{
+  font-size:4em;
+  text-transform:uppercase;
+  margin:0.67rem;
+  font-weight:700;
+}
+
+h2 {
+	font-size:3em;
+	text-transform:uppercase;
+	font-weight:700;
+  margin:1em;
+}
+h3 {
+  font-size:2em;
+  margin:1em 0 0 0;
+}
+h4 {
+  font-size:1.1em;
+}
+h5 {
+  font-size:1.1em;
+  font-style:italic;
+}
+p {
+  font-family:$b-font;
+  font-size:1.3em;
+  margin:1em 0 0 0;
+  line-height:1.4;
+  color:$font-color;
+}
+a {
+  color:$link;
+  font-weight:700;
+}
+
+@media all and(max-width:700px) {
+  h1 {
+    font-size:2.75em;
+  }
+  h2 {
+    font-size:2.4em;
+  }
+  h3 {
+    font-size:1.5em;
+  }
+}
+
+
+
+
+

@@ -1,0 +1,116 @@
+.rsvp-banner {
+  background:$orange;
+  color:$brown;
+  position:relative;
+  h4 {
+    text-align:center;
+    margin:0.5;
+  }
+  svg {
+    width:20%;
+    fill:$brown;
+    display:block;
+    margin:0 auto;
+
+  }
+  .rsvp-header-small {
+    visibility:hidden;
+    position:absolute;
+  }
+  @media all and(min-width:700px) {
+    .rsvp-header-small {
+      visibility: visible;
+      position:relative;
+    }
+    .rsvp-header-large {
+      visibility:hidden;
+      position:absolute;
+    }
+  }
+}
+.rsvp-section {
+  h2 {
+    text-align:center;
+  }
+}
+.rsvp-form {
+  max-width:700px;
+  margin:0 auto;
+}
+.ss-q-title {
+  font-size:1.9em;
+  margin:0 0 0.5em 0;
+  text-transform:uppercase;
+  font-family:$h-font;
+}
+.ss-form-question:nth-of-type(2){
+  border-bottom:2px solid $d-grey;
+  padding:0 0 2em 0;
+  margin: 0 0 1.56em 0;
+}
+.ss-form-question:nth-of-type(3){
+  text-align:center;
+  padding:0 0 2em 0;
+  .ss-q-title {
+    font-size:1.9em;
+    display:block;
+  }
+}
+.ss-navigation {
+
+    table {
+      margin:0 auto;
+      padding:5em 0;
+      margin:5em 0;
+    }
+}
+.ss-form-entry {
+  padding:1em 0;
+  width:100%;
+  input[type=text] {
+    border:2px solid $l-grey;
+    outline: none;
+    padding: 1em;
+    &:focus {
+      box-shadow:(inset 0 0 15px 0px rgba(0,0,255,0.3));
+    }
+  }
+  input[type=submit]  {
+    background:$brown;
+    border-radius:3px;
+    border:none;
+    text-decoration:none;
+    color:$orange;
+    padding:.5em;
+    margin:1em auto 0 auto;
+    display:inline-block;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.9);
+    font-size:1.2em;
+    min-width:200px;
+    text-align:center;
+    font-weight:600;
+
+    &:hover {
+      background:$l-brown;
+    }
+    &:active {
+      transform:translate(0,2px);
+      box-shadow:none;
+    }
+  }
+  .ss-q-short {
+    width:100%;
+    background:$ll-grey;
+  }
+}
+.ss-radio, .ss-checkbox {
+  li {
+    margin:0.4em 0;
+    font-size:1.2em;
+  }
+}
+@media all and(max-width:700px) {
+  .rsvp-form {
+    padding:1em;
+  }
+}
