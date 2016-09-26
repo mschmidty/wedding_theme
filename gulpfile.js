@@ -23,7 +23,7 @@ gulp.task('browser-sync', function() {
     './style.css',
     './*.php'
     ];
- 
+
     //initialize browsersync
     browserSync.init(files, {
     //browsersync with a php server
@@ -71,7 +71,7 @@ gulp.task('svgstore', function () {
 
 // Watch Files For Changes
 gulp.task('watch', function() {
-    gulp.watch('src/scss/*.scss', ['styles']);
+    gulp.watch(['src/scss/*.scss', 'css/ie-main.css'], ['styles']);
     gulp.watch('src/images/*', ['images']);
     gulp.watch('src/js/*.js', ['scripts']);
     gulp.watch('src/svg/*.svg', ['svgstore']);
@@ -79,6 +79,3 @@ gulp.task('watch', function() {
 
 // Default Task
 gulp.task('default', ['styles', 'scripts','watch', 'images', 'svgstore', 'browser-sync']);
-
-
-

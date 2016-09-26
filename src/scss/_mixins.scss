@@ -1,3 +1,7 @@
+html, body {
+  height:100%;
+}
+
 *, *:before, *:after {
   margin:0;
   padding:0;
@@ -31,10 +35,10 @@
 @mixin clearfix {
     zoom:1;
     &:before, &:after {
-        content: "\0020"; 
-        display: block; 
-        height: 0; 
-        overflow: hidden; 
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
     }
     &:after {
         clear: both;
@@ -78,9 +82,9 @@
   @include clearfix;
  }
 
-//New Theme 
-$white: #FCFFF5; 
-$black:#111111;  
+//New Theme
+$white: #FCFFF5;
+$black:#111111;
 $bage:#D8CAA8;
 $l-green:#5C832F;
 $d-green:#284907;
@@ -118,13 +122,3 @@ body {
   background:$orange;
   color:$brown;
 }
-
-
-
-
-
-
-
-
-
-

@@ -1,11 +1,11 @@
-<?php 
+<?php
   /* Template Name: Custom Home */
 
   get_header();
 ?>
 
 <div class="home-outer">
-  
+
   <div class="home-banner">
     <div class="sun"></div>
     <div class="moon"></div>
@@ -42,7 +42,7 @@
         $do_not_duplicate = $post->ID;?>
 
       <div class="clip-image">
-         <?php 
+         <?php
 
         $image = get_field('home_section_image');
         $sizeMedium = 'medium-thumb-img';
@@ -55,9 +55,9 @@
        ?>
        <?php if( !empty($image) ): ?>
 
-        <img sizes="50vw" 
+        <img sizes="50vw"
         srcset="
-            
+
             <?php echo $medium; ?> 700w,
             <?php echo $small; ?> 500w,
             <?php echo $xsmall; ?> 300w"
@@ -87,7 +87,7 @@
         $do_not_duplicate = $post->ID;?>
 
       <div class="clip-image">
-         <?php 
+         <?php
 
         $image = get_field('home_section_image');
         $sizeMedium = 'medium-thumb-img';
@@ -100,9 +100,9 @@
        ?>
        <?php if( !empty($image) ): ?>
 
-        <img sizes="50vw" 
+        <img sizes="50vw"
         srcset="
-            
+
             <?php echo $medium; ?> 700w,
             <?php echo $small; ?> 500w,
             <?php echo $xsmall; ?> 300w"
@@ -126,11 +126,10 @@
     <?php rewind_posts(); ?>
   </div> <!--background-brown-->
   <div class="background-orange">
-    
+
   </div>
 
 </div>
 
 
 <?php get_footer(); ?>
-

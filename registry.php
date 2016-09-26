@@ -10,9 +10,6 @@
     <use xlink:href="#feather2"></use>
   </svg>
   <h1>Registry</h1>
-  <p>
-    If you've already spent enough getting to our wedding, don't bother with a gift.
-  </p>
   <h1 class="down">   &#xfe40; </h1>
 </div>
 <section class="content-area">
