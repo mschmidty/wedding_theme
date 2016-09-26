@@ -18,9 +18,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-<!--[if IE]>
-	<link rel="stylesheet" type="text/css" href="<?php echo get_stylesheet_directory_uri(); ?>/css/ie-main.css />
-<![endif]-->
+
 </head>
 
 <body <?php body_class(); ?>>
